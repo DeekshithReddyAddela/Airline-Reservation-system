@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<title>hotel</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="final.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
+</style>
+<body class="na-light-grey">
+
+<!-- Navigation Bar -->
+<ul class="na-navbar na-white na-large">
+  <li><a href="#" class="na-red"><i class="fa fa-bed na-margin-right"></i>Logo</a></li>
+  <li><a href="#rooms">Rooms</a></li>
+  <li><a href="#about">About</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li class="na-right na-light-grey"><a href="#contact">Book Now</a></li>
+</ul>
+
+<!-- Header -->
+<header class="na-display-container na-content" style="max-width:1500px;">
+  <img class="na-image" src="\nani\images\hotel.jpg" alt="The Hotel" style="min-width:1000px" width="1500" height="800">
+  <div class="na-display-left na-padding na-col l6 m8">
+    <div class="na-container na-red">
+      <h2><i class="fa fa-bed na-margin-right"></i>Hotel Name</h2>
+    </div>
+    <div class="na-container na-white na-padding-16">
+      <form action="/action_page.php" target="_blank">
+        <div class="na-row-padding" style="margin:0 -16px;">
+          <div class="na-half na-margin-bottom">
+            <label><i class="fa fa-calendar-o"></i> Check In</label>
+            <input class="na-input na-border" type="text" placeholder="DD MM YYYY" name="CheckIn" required>
+          </div>
+          <div class="na-half">
+            <label><i class="fa fa-calendar-o"></i> Check Out</label>
+            <input class="na-input na-border" type="text" placeholder="DD MM YYYY" name="CheckOut" required>
+          </div>
+        </div>
+        <div class="na-row-padding" style="margin:8px -16px;">
+          <div class="na-half na-margin-bottom">
+            <label><i class="fa fa-male"></i> Adults</label>
+            <input class="na-input na-border" type="number" value="1" name="Adults" min="1" max="6">
+          </div>
+          <div class="na-half">
+            <label><i class="fa fa-child"></i> Kids</label>
+          <input class="na-input na-border" type="number" value="0" name="Kids" min="0" max="6">
+          </div>
+        </div>
+        <button class="na-btn na-dark-grey" type="submit"><i class="fa fa-search na-margin-right"></i> Search availability</button>
+      </form>
+    </div>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="na-content" style="max-width:1532px;">
+
+  <div class="na-container na-margin-top" id="rooms">
+    <h3>Rooms</h3>
+    <p>Make yourself at home is our slogan. We offer the best beds in the industry. Sleep well and rest well.</p>
+  </div>
+  
+  <div class="na-row-padding">
+    <div class="na-col m3">
+      <label><i class="fa fa-calendar-o"></i> Check In</label>
+      <input class="na-input na-border" type="text" placeholder="DD MM YYYY">
+    </div>
+    <div class="na-col m3">
+      <label><i class="fa fa-calendar-o"></i> Check Out</label>
+      <input class="na-input na-border" type="text" placeholder="DD MM YYYY">
+    </div>
+    <div class="na-col m2">
+      <label><i class="fa fa-male"></i> Adults</label>
+      <input class="na-input na-border" type="number" placeholder="1">
+    </div>
+    <div class="na-col m2">
+      <label><i class="fa fa-child"></i> Kids</label>
+      <input class="na-input na-border" type="number" placeholder="0">
+    </div>
+    <div class="na-col m2">
+      <label><i class="fa fa-search"></i> Search</label>
+      <button class="na-btn-block na-padding-8">Search</button>
+    </div>
+  </div>
+
+  <div class="na-row-padding na-padding-16">
+    <div class="na-third na-margin-bottom">
+      <img src="\nani\images\room_single.jpg" alt="Norway" style="width:100%">
+      <div class="na-container na-white">
+        <h3>Single Room</h3>
+        <h6 class="na-opacity">From $99</h6>
+        <p>Single bed</p>
+        <p>15m<sup>2</sup></p>
+        <p class="na-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i></p>
+        <button class="na-btn-block na-margin-bottom">Choose Room</button>
+      </div>
+    </div>
+    <div class="na-third na-margin-bottom">
+      <img src="\nani\images\room_double.jpg" alt="Norway" style="width:100%">
+      <div class="na-container na-white">
+        <h3>Double Room</h3>
+        <h6 class="na-opacity">From $149</h6>
+        <p>Queen-size bed</p>
+        <p>25m<sup>2</sup></p>
+        <p class="na-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i> <i class="fa fa-tv"></i></p>
+        <button class="na-btn-block na-margin-bottom">Choose Room</button>
+      </div>
+    </div>
+    <div class="na-third na-margin-bottom">
+      <img src="\nani\images\room_deluxe.jpg" alt="Norway" style="width:100%">
+      <div class="na-container na-white">
+        <h3>Deluxe Room</h3>
+        <h6 class="na-opacity">From $199</h6>
+        <p>King-size bed</p>
+        <p>40m<sup>2</sup></p>
+        <p class="na-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i> <i class="fa fa-tv"></i> <i class="fa fa-glass"></i> <i class="fa fa-cutlery"></i></p>
+        <button class="na-btn-block na-margin-bottom">Choose Room</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="na-row-padding" id="about">
+    <div class="na-col l4 m7">
+      <h3>About</h3>
+      <h6>Our hotel is one of a kind. It is truely amazing. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</h6>
+    <p>We accept: <i class="fa fa-credit-card na-large"></i> <i class="fa fa-cc-mastercard na-large"></i> <i class="fa fa-cc-amex na-large"></i> <i class="fa fa-cc-cc-visa na-large"></i><i class="fa fa-cc-paypal na-large"></i></p>
+    </div>
+    <div class="na-col l8 m5">
+      <div id="googleMap" style="width:100%;height:400px;" class="na-grayscale"></div>
+    </div>
+  </div>
+  
+  <div class="na-row na-large na-center" style="margin:32px 0">
+    <div class="na-third"><i class="fa fa-map-marker na-text-red"></i> 423 Some adr, Chicago, US</div>
+    <div class="na-third"><i class="fa fa-phone na-text-red"></i> Phon +00 151515</div>
+    <div class="na-third"><i class="fa fa-envelope na-text-red"></i> Email: mail@mail.com</div>
+  </div>
+
+  <div class="na-panel na-red na-leftbar na-padding-32">
+    <h6><i class="fa fa-info na-deep-orange na-padding na-margin-right"></i> On demand, we can offer playstation, babycall, children care, dog equipment, etc.</h6>
+  </div>
+
+  <div class="na-container">
+    <h3>Our Hotels</h3>
+    <h6>You can find our hotels anywhere in the world:</h6>
+  </div>
+  
+  <div class="na-row-padding na-padding-16 na-text-white na-large">
+    <div class="na-half na-margin-bottom">
+      <div class="na-display-container">
+        <img src="\nani\images\cinqueterre.jpg" alt="Cinque Terre" style="width:100%">
+        <span class="na-display-bottomleft na-padding">Cinque Terre</span>
+      </div>
+    </div>
+    <div class="na-half">
+      <div class="na-row-padding" style="margin:0 -16px">
+        <div class="na-half na-margin-bottom">
+          <div class="na-display-container">
+            <img src="\nani\images\newyork2.jpg" alt="New York" style="width:100%">
+            <span class="na-display-bottomleft na-padding">New York</span>
+          </div>
+        </div>
+        <div class="na-half na-margin-bottom">
+          <div class="na-display-container">
+            <img src="\nani\images\sanfran.jpg" alt="San Francisco" style="width:100%">
+            <span class="na-display-bottomleft na-padding">San Francisco</span>
+          </div>
+        </div>
+      </div>
+      <div class="na-row-padding" style="margin:0 -16px">
+        <div class="na-half na-margin-bottom">
+          <div class="na-display-container">
+            <img src="\nani\images\pisa.jpg" alt="Pisa" style="width:100%">
+            <span class="na-display-bottomleft na-padding">Pisa</span>
+          </div>
+        </div>
+        <div class="na-half na-margin-bottom">
+          <div class="na-display-container">
+            <img src="\nani\images\paris.jpg" alt="Paris" style="width:100%">
+            <span class="na-display-bottomleft na-padding">Paris</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="na-container na-padding-32 na-black na-opacity na-card-2 na-hover-opacity-off" style="margin:32px 0;">
+    <h2>Get the best offers first!</h2>
+    <p>Join our newsletter.</p>
+    <label>E-mail</label>
+    <input class="na-input na-border" type="text" placeholder="Your Email address">
+    <button type="button" class="na-btn na-red na-margin-top">Subscribe</button>
+  </div>
+
+  <div class="na-container" id="contact">
+    <h2>Contact</h2>
+    <p>If you have any questions, do not hesitate to ask them.</p>
+    <i class="fa fa-map-marker na-text-red" style="width:30px"></i> Chicago, US<br>
+    <i class="fa fa-phone na-text-red" style="width:30px"></i> Phon +00 151515<br>
+    <i class="fa fa-envelope na-text-red" style="width:30px"> </i> Email: mail@mail.com<br>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="na-input na-padding-16 na-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="na-input na-padding-16 na-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="na-input na-padding-16 na-border" type="text" placeholder="Message" required name="Message"></p>
+      <p><button class="na-btn na-padding-large" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="na-padding-32 na-black na-center na-margin-top">
+  <h5>Find Us On</h5>
+  <div class="na-xlarge na-padding-16">
+    <i class="fa fa-facebook-official na-hover-text-indigo"></i>
+    <i class="fa fa-instagram na-hover-text-purple"></i>
+    <i class="fa fa-snapchat na-hover-text-yellow"></i>
+    <i class="fa fa-pinterest-p na-hover-text-red"></i>
+    <i class="fa fa-twitter na-hover-text-light-blue"></i>
+    <i class="fa fa-linkedin na-hover-text-indigo"></i>
+  </div>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="na-hover-text-green">w3.css</a></p>
+</footer>
+
+<!-- Add Google Maps -->
+<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggabl false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<title>airlines</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="final.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
+.myLink {display: none}
+</style>
+<body class="na-light-grey">
+
+<!-- Navigation Bar -->
+<ul id="header"class="na-navbar na-white na-border-bottom na-large">
+  <li><a href="#" class="na-text-red na-hover-red"><b>Nani Airlines</b></a></li>
+</ul>
+
+<!-- Header -->
+<header class="na-display-container na-content na-hide-small" style="max-width:1500px">
+  <img class="na-image" src="\nani\images\london2.jpg" alt="London" width="1500" height="700">
+ <div class="col-md-12 col-sm-12 col-xs-12 padB10 padL10 frmEl">
+<span class="padR10 fl">
+<input id="gi_oneway_label_srp" type="radio" class="fl" name="radio" checked="checked">
+<label for="gi_oneway_label_srp" class="white fb fl padL3">One-way</label>
+</span>
+<span class="padR10 fl">
+<input id="gi_roundtrip_label_srp" type="radio" name="radio" class="fl">
+<label for="gi_roundtrip_label_srp" class="white fl fb padL3">Round-trip</label>
+</span>
+<span class="padR20 padB5 mobdn ico13 fl" id="fphCheckbox">
+<input type="checkbox" id="gi_flight_hotel_label_srp" class="fl" name="gi_flight_hotel_label">
+<label class="white checkbox fl fb padL3" for="gi_flight_hotel_label_srp">
+Flight + Hotel
+</label>
+</span>
+<input type="text" value="" class="form-control txtInput" id="gi_source_st_srp" name="gi_source_srp" onclick="this.setSelectionRange(0, this.value.length)" autocomplete="off">
+</div>
+</header>
+
+ 
+  <div class="na-container">
+    <h2>Contact</h2>
+    <p>Let us book your next trip!</p>
+    <i class="fa fa-map-marker" style="width:30px"></i> Hyderabad, INDIA<br>
+    <i class="fa fa-phone" style="width:30px"></i> Phon +91 8498810227<br>
+    <i class="fa fa-envelope" style="width:30px"> </i> Email: deekshithreddy9@gmail.com<br>
+   
+  </div>
+  
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="na-container na-center na-opacity na-margin-bottom">
+  <h5>Find Us On</h5>
+  <div class="na-xlarge na-padding-16">
+    <i class="fa fa-facebook-official na-hover-text-indigo"></i>
+    <i class="fa fa-instagram na-hover-text-purple"></i>
+    <i class="fa fa-snapchat na-hover-text-yellow"></i>
+    <i class="fa fa-pinterest-p na-hover-text-red"></i>
+    <i class="fa fa-twitter na-hover-text-light-blue"></i>
+    <i class="fa fa-linkedin na-hover-text-indigo"></i>
+  </div>
+  <p>Powered by <a  target="_blank" class="na-hover-text-green">nani</a></p>
+</footer>
+
+<script>
+// Tabs
+function openLink(evt, linkName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("myLink");
+  for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" na-red", "");
+  }
+  document.getElementById(linkName).style.display = "block";
+  evt.currentTarget.className += " na-red";
+}
+// Click on the first tablink on load
+document.getElementsByClassName("tablink")[0].click();
+</script>
+
+</body>
+</html>
